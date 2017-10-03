@@ -1,0 +1,21 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.page-border {
+    display: block;
+    flex-basis: 60px;
+    background-color: #000;
+}
+
+.container {
+    padding: 0 15px;
+}
