@@ -2,7 +2,8 @@
   "name": "Selene",
   "version": "0.0.1",
   "scripts": {
-    "build": "webpack-dev-server"
+    "server": "webpack-dev-server",
+    "build": "webpack"
   },
   "dependencies": {
     "history": "^4.7.2",

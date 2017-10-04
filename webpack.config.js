@@ -6,7 +6,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const outputPath = path.resolve(__dirname, './dist');
 
 module.exports = {
-  entry: path.resolve(__dirname, './src/Content.js'),
+  entry: path.resolve(__dirname, './src/index.js'),
   output: {
     path: outputPath,
     filename: '[name].js'
@@ -30,7 +30,6 @@ module.exports = {
       {
         test: /\.(jpg|jpeg|gif|png|svg)$/,
         exclude: [/node_modules/, /dist/],
-        include: '/src/assets/',
         use: 'url-loader?limit=10000&name=assets/[name]-[hash].[ext]'
       }
     ]

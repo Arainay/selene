@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 
-import './content.css';
+import '../assets/css/content.css';
 
 export default class Content extends PureComponent {
   render() {

@@ -1,0 +1,27 @@
+.page-header {
+  display: block;
+  color: rgba(245, 245, 245, 0.5);
+}
+
+.page-header__inside {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.main-nav {
+  height: inherit;
+}
+
+.main-nav__list {
+  display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  max-height: 100%;
+}
+
+.main-nav__list-item {
+  display: inline-block;
+}

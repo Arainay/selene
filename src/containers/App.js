@@ -4,9 +4,9 @@ import { bindActionCreators } from 'redux';
 import { Route } from 'react-router-dom';
 import { withRouter } from 'react-router-dom';
 
-import Header from './header/Header';
-import Content from './content/Content';
-import Footer from './footer/Footer';
+import Header from './page/Header';
+import Content from './page/Content';
+import Footer from './page/Footer';
 
 import '../assets/style.css';
 

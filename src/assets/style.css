@@ -1,21 +1,22 @@
 html,
 body {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .wrapper {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 .page-border {
-    display: block;
-    flex-basis: 60px;
-    background-color: #000;
+  display: block;
+  flex-basis: 60px;
+  height: 60px;
+  background-color: #000;
 }
 
 .container {
-    padding: 0 15px;
+  padding: 0 15px;
 }
