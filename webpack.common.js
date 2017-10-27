@@ -1,7 +1,7 @@
-const webpack = require('webpack');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const CleanWebpackPlugin = require('clean-webpack-plugin');
 
 const outputPath = path.resolve(__dirname, './dist');
 
@@ -35,20 +35,12 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
       template: path.join(__dirname, './src/assets/index.html'),
       filename: 'index.html',
       path: outputPath
     }),
-    new ExtractTextPlugin("styles.css"),
-    new webpack.NamedModulesPlugin(),
-    new webpack.HotModuleReplacementPlugin()
-  ],
-  devServer: {
-    contentBase: outputPath,
-    port: 9090,
-    historyApiFallback: true,
-    inline: true,
-    hot: true
-  }
+    new ExtractTextPlugin("styles.css")
+  ]
 };
