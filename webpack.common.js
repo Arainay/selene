@@ -41,6 +41,6 @@ module.exports = {
       filename: 'index.html',
       path: outputPath
     }),
-    new ExtractTextPlugin("styles.css")
+    new ExtractTextPlugin('styles.css')
   ]
 };
