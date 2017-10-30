@@ -1,10 +1,15 @@
 import { createStore, applyMiddleware } from 'redux';
-import rootReducer from '../reducers';
 import { routerMiddleware } from 'react-router-redux';
 import createBrowserHistory from 'history/createBrowserHistory';
+import createSagaMiddleware from 'redux-saga';
 
-const middleware = routerMiddleware(createBrowserHistory());
+import rootReducer from '../reducers';
+
+const routeMiddleware = routerMiddleware(createBrowserHistory());
+const sagaMiddleware = createSagaMiddleware();
 
 export default function configureStore(initialState) {
-  return createStore(rootReducer, initialState, applyMiddleware(middleware));
+  return createStore(rootReducer, initialState, applyMiddleware(routeMiddleware, sagaMiddleware));
 }
+
+export { sagaMiddleware };

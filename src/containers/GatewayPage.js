@@ -6,6 +6,7 @@ import * as gatewayActions from '../actions/gatewayActions';
 
 class GatewayPage extends PureComponent {
   render() {
+    const gateway = this.props.gatewayActions.getGateway();
     return <h1>Gateway</h1>;
   }
 }
