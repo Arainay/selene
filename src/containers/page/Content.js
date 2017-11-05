@@ -8,7 +8,7 @@ import DevicesPage from '../DevicesPage';
 import MessagesPage from '../MessagesPage';
 import ProvidersPage from '../ProvidersPage';
 
-import '../assets/css/content.css';
+import '../assets/styles/content.less';
 
 class Content extends PureComponent {
   render() {

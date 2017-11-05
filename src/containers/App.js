@@ -4,7 +4,7 @@ import Header from './page/Header';
 import Content from './page/Content';
 import Footer from './page/Footer';
 
-import '../assets/style.css';
+import '../assets/style.less';
 
 export default class App extends Component {
   render() {
