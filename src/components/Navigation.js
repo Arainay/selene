@@ -1,24 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Navigation = () => {
   return (
     <nav className="main-nav">
       <ul className="main-nav__list">
         <li className="main-nav__list-item">
-          <Link to="/" className="main-nav__link">home</Link>
+          <NavLink exact to="/" className="main-nav__link" activeClassName="active">home</NavLink>
         </li>
         <li className="main-nav__list-item">
-          <Link to="/gateway" className="main-nav__link">gateway</Link>
+          <NavLink to="/gateway" className="main-nav__link" activeClassName="active">gateway</NavLink>
         </li>
         <li className="main-nav__list-item">
-          <Link to="/devices" className="main-nav__link">devices</Link>
+          <NavLink to="/devices" className="main-nav__link" activeClassName="active">devices</NavLink>
         </li>
         <li className="main-nav__list-item">
-          <Link to="/messages" className="main-nav__link">error messages</Link>
+          <NavLink to="/messages" className="main-nav__link" activeClassName="active">error messages</NavLink>
         </li>
         <li className="main-nav__list-item">
-          <Link to="/providers" className="main-nav__link">cloud providers</Link>
+          <NavLink to="/providers" className="main-nav__link" activeClassName="active">cloud providers</NavLink>
         </li>
       </ul>
     </nav>
