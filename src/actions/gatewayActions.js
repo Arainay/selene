@@ -7,5 +7,5 @@ export function saveGateway(gateway) {
 }
 
 export function updateGateway(gateway) {
-
+  return { type: 'UPDATE_GATEWAY', payload: gateway };
 }

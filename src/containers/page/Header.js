@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 import Navigation from '../../components/Navigation';
 
 import '../assets/styles/header/header.less';
+import '../assets/styles/header/main-nav.less';
 
 export default class Header extends Component {
   render() {
