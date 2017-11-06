@@ -8,18 +8,18 @@ import DevicesPage from '../DevicesPage';
 import MessagesPage from '../MessagesPage';
 import ProvidersPage from '../ProvidersPage';
 
-import '../assets/css/content.css';
+import '../assets/styles/content.less';
 
 class Content extends PureComponent {
   render() {
     return (
       <main className="page-content container">
         <div className="page-content__container">
-          <Route exact path="/" render={ () => { return <MainPage/>; } } />
-          <Route path="/gateway" render={ () => { return <GatewayPage/>; } } />
-          <Route path="/devices" render={ () => { return <DevicesPage/>; } } />
-          <Route path="/messages" render={ () => { return <MessagesPage/>; } } />
-          <Route path="/providers" render={ () => { return <ProvidersPage/>; } } />
+          <Route exact path="/" component={ MainPage } />
+          <Route path="/gateway" component={ GatewayPage } />
+          <Route path="/devices" component={ DevicesPage } />
+          <Route path="/messages" component={ MessagesPage } />
+          <Route path="/providers" component={ ProvidersPage } />
         </div>
       </main>
     );

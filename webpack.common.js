@@ -20,11 +20,11 @@ module.exports = {
         options: { presets: ['react', 'stage-0', 'react-hmre'] }
       },
       {
-        test: /\.css$/,
+        test: /\.less$/,
         exclude: [/node_modules/, /dist/],
         use: ExtractTextPlugin.extract({
-          fallback: "style-loader",
-          use: "css-loader"
+          fallback: 'style-loader',
+          use: ['css-loader', 'less-loader']
         })
       },
       {
